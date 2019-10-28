@@ -1,2 +1,2 @@
 # file-compressor
-A implemented in C that compresses/uncompresses files.
+A program implemented in C that compresses/uncompresses files.
