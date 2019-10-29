@@ -2,11 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <stdbool.h>
 #include <math.h>
 
-typedef unsigned char byte;
+// #include "arvore/arvore.c"
+// #include "lista/lista.c"
 
-/** Definição da árvore */
+typedef unsigned char byte;
+// typedef char bool;
+
+/* Definição da árvore */
 typedef struct nodeArvore
 {
     int                 frequencia;
@@ -15,7 +20,7 @@ typedef struct nodeArvore
     struct nodeArvore   *direita;
 } nodeArvore;
 
-/** Definição da fila de prioridade (implementada como lista ligada) */
+/* Definição da fila de prioridade (implementada como lista ligada) */
 typedef struct nodeLista
 {
     nodeArvore          *n;
@@ -103,7 +108,6 @@ void insereLista(nodeLista *n, lista *l)
 
 nodeArvore *popMinLista(lista *l)
 {
-
     // Ponteiro auxilar que aponta para o primeiro nó da lista
     nodeLista *aux = l->head;
 
@@ -134,8 +138,6 @@ void getByteFrequency(FILE *entrada, unsigned int *listaBytes)
 
     rewind(entrada); // "rebobina o arquivo"
 }
-
-#include <stdbool.h>
 
 bool pegaCodigo(nodeArvore *n, byte c, char *buffer, int tamanho)
 {

@@ -1,5 +1,5 @@
-#ifndef LISTA_H_INCLUDED
-#define LISTA_H_INCLUDED
+#ifndef LISTA_H
+#define LISTA_H
 
 #include "../arvore/arvore.h"
 

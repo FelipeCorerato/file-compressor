@@ -1,5 +1,5 @@
-#ifndef ARVORE_H_INCLUDED
-#define ARVORE_H_INCLUDED
+#ifndef ARVORE_H
+#define ARVORE_H
 
 typedef unsigned char byte;
 
